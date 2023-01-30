@@ -1,10 +1,10 @@
 import pickle
 import pandas as pd
 
-model = pickle.load(open('my_pipe_vot.pkl', 'rb'))
+model = pickle.load(open('my_pipe_ada.pkl', 'rb'))
 
 
-cols = ['state', 'bankstate', 'naics', 'term', 'noemp', 'newexist', 'createjob',
+cols = ['state', 'bankstate', 'term', 'noemp', 'newexist', 'createjob',
        'retainedjob', 'franchisecode', 'urbanrural', 'revlinecr', 'lowdoc', 'grappv']
 
 # value = [18, 'female', 4, 'no', 'northeast', 'obesity']

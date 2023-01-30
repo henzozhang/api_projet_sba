@@ -80,7 +80,6 @@ from pydantic import BaseModel
 class Textin(BaseModel):
     state : str
     bankstate : str
-    naics : str
     term : int
     noemp : int
     newexist : str
