@@ -9,6 +9,6 @@ COPY . /app
 RUN pip install --upgrade pip && \
 pip install -r requirements.txt
 
-EXPOSE 8000
+# EXPOSE 8000
 
-CMD ["python", "main.py","uvicorn main:app --reload"]
+CMD ["uvicorn","main:app","--reload"]
